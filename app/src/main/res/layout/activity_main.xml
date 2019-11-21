@@ -4,31 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/backgrounfd"
+        android:id="@+id/find_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="MY SOLUTION"
+        android:layout_marginBottom="40dp"
+        android:text="FIND SOLUTION"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/num_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
         android:id="@+id/num_edit_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:ems="10"
         android:hint="number"
         android:inputType="textPersonName"
@@ -37,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgrounfd" />
+        app:layout_constraintTop_toBottomOf="@+id/find_textview" />
 
     <EditText
         android:id="@+id/target_edit_Text"
@@ -45,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="your answer"
+        android:hint="target"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/check_button"
@@ -60,11 +61,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="solution"
+        android:textColor="?attr/colorControlNormal"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/target_edit_Text" />
+
+    <TextView
+        android:id="@+id/sol_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#84B4C8"
+        android:gravity="center"
+        android:text="GAME"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
